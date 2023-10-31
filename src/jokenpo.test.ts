@@ -22,3 +22,11 @@ describe("Jokenpo tests: Empates", function () {
     assert.strictEqual(resultado, "EMPATOU");
   });
 });
+
+describe("Jokenpo tests: Ganhos", function () {
+  // Pedra ganha de Tesoura
+  test("Stone + Scissor = ✔️", () => {
+    const resultado = Jokenpo("Pedra", "Tesoura");
+    assert.strictEqual(resultado, "GANHOU");
+  });
+});

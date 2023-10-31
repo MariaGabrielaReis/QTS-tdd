@@ -13,5 +13,6 @@ export function Jokenpo(
   player2: Jokenpo_Options,
 ): Jokenpo_Result {
   if (player1 === player2) return "EMPATOU";
-  return "EMPATOU";
+  if (player1 === "Pedra" && player2 === "Tesoura") return "GANHOU";
+  return "PERDEU";
 }
