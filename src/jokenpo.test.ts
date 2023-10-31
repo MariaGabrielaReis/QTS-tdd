@@ -42,3 +42,23 @@ describe("Jokenpo tests: Ganhos", function () {
     assert.strictEqual(resultado, "GANHOU");
   });
 });
+
+describe("Jokenpo tests: Perdas", function () {
+  // Tesoura perde para Pedra
+  test("Scissor + Stone = ❌", () => {
+    const resultado = Jokenpo("Tesoura", "Pedra");
+    assert.strictEqual(resultado, "PERDEU");
+  });
+
+  // Papel perde para Tesoura
+  test("Paper + Scissor = ❌", () => {
+    const resultado = Jokenpo("Papel", "Tesoura");
+    assert.strictEqual(resultado, "PERDEU");
+  });
+
+  // Pedra perde para Papel
+  test("Stone + Paper = ❌", () => {
+    const resultado = Jokenpo("Pedra", "Papel");
+    assert.strictEqual(resultado, "PERDEU");
+  });
+});
