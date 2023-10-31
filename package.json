@@ -4,12 +4,13 @@
   "author": "Maria Gabriela Reis",
   "description": "Implementação de testes usando TDD",
   "scripts": {
-    "test": "node --test --require ts-node/register ./src/jokenpo.test.ts"
+    "test": "node --require ts-node/register --test | tap ./src/jokenpo.test.ts"
   },
   "keywords": [],
   "license": "MIT",
   "dependencies": {
     "@types/node": "^20.8.10",
+    "tap": "^18.5.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
