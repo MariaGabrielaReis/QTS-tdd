@@ -35,4 +35,10 @@ describe("Jokenpo tests: Ganhos", function () {
     const resultado = Jokenpo("Tesoura", "Papel");
     assert.strictEqual(resultado, "GANHOU");
   });
+
+  // Papel ganha de Pedra
+  test("Paper + Stone = ✔️", () => {
+    const resultado = Jokenpo("Papel", "Pedra");
+    assert.strictEqual(resultado, "GANHOU");
+  });
 });
